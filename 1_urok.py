@@ -13,3 +13,15 @@ red = {3: 13, 4: 14}
 print(red)
 vasa.update(red)
 print(vasa)
+
+class Poin:
+    cou = 0
+
+pt = Poin()
+# статические поведение класса
+print(pt.cou)
+Poin.cou = 10
+print(pt.cou)
+# не статическое свойство
+pt.cou = 12
+print(pt.cou)
